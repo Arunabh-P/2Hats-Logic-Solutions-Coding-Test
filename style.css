@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  /* Color */
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f9f9f9;
+  --text-color: #333;
+  --white: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Font sizes */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 2.5rem;
+  --fs-3xl: 3rem;
+
+  /* Font Families */
+  --font-main: "Poppins", sans-serif;
+  --font-heading: "Roboto", sans-serif;
+
+  /* Section padding */
+  --section-padding-y: 2rem;
+  --section-padding-x: 1rem;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+}
+
+.section-x-padding {
+  padding-left: var(--section-padding-x);
+  padding-right: var(--section-padding-x);
+}
+
+.section-padding {
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: var(--fs-3xl);
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+}
+
+h3 {
+  font-size: var(--fs-xl);
+}
+
+h4 {
+  font-size: var(--fs-lg);
+}
+
+h5 {
+  font-size: var(--fs-md);
+}
+
+h6 {
+  font-size: var(--fs-sm);
+}
+
+p,
+li {
+  font-size: var(--fs-base);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.font-small {
+  font-size: var(--fs-xs);
+}
+.font-small-sm{
+  font-size: var(--fs-sm);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----- navbar ----- */
+.menu-button {
+  background-color: black;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.menu-button:focus,
+.menu-button:active,
+.menu-button:hover {
+  background-color: black;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.logo {
+  width: 82px;
+}
+
+.menu-icons {
+  font-size: 24px;
+}
+
+/* ----- navbar ----- */
+
+/* ----- Section One ----- */
+.banner {
+  background-image: url("./image/banner-mobile.png");
+  height: 432px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.banner-card {
+  width: 100%;
+  position: relative;
+  bottom: -300px;
+  background-color: #666a6f;
+}
+
+.banner-card-text {
+  color: #ececec;
+}
+
+/* ----- Section One ----- */
+
+/* ----- Section Two ----- */
+.product-section {
+  padding-top: 250px;
+  background:
+    linear-gradient(0deg, rgba(17, 16, 16, 0.0190104) 0%, rgba(17, 16, 16, 0) 100%),
+    url('./image/bg-vector.png');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.vector-bottom {
+  background:
+    linear-gradient(0deg, rgba(17, 16, 16, 0.0190104) 0%, rgba(17, 16, 16, 0) 100%),
+    url('./image/bg-vector.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.carousel-card {
+  height: 405px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.carousel-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-content {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  position: absolute;
+  bottom: -3.75rem;
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card-one {
+  width: 100%;
+}
+
+.product-card-two {
+  display: none;
+}
+
+.product-content {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 220px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  bottom: -552px;
+}
+
+.product-content-two {
+  background-color: black;
+  color: white;
+  border: 1px solid;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 350px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  bottom: -210px;
+}
+
+/* ----- Section Two ----- */
+
+/* ----- Common ----- */
+.title-text {
+  border-bottom: 3px solid #C4C4C4;
+  width: fit-content;
+}
+
+/* ----- Common ----- */
+@media (min-width: 500px) {
+  .banner {
+    background-image: url("./image/banner-tab.png");
+    background-size: cover;
+  }
+
+  .banner-card {
+    bottom: -260px;
+  }
+
+  .product-section {
+    padding-top: 190px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-base: 1.125rem;
+    --fs-md: 1.25rem;
+    --fs-lg: 2rem;
+    --fs-xl: 2.5rem;
+    --fs-2xl: 3rem;
+    --fs-3xl: 3.5rem;
+    --section-padding-y: 4rem;
+    --section-padding-x: 6rem;
+  }
+
+  .product-section {
+    padding-top: 40px;
+  }
+
+  .banner-card {
+    width: 400px;
+    position: static;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-lg-100 {
+    width: 100% !important;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .banner-card {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --fs-base: 1.25rem;
+    --fs-md: 1.5rem;
+    --fs-lg: 2.25rem;
+    --fs-xl: 3rem;
+    --fs-2xl: 3.5rem;
+    --fs-3xl: 4rem;
+    --section-padding-y: 6rem;
+    --section-padding-x: 8rem;
+  }
+
+  .banner {
+    background-image: url("./image/banner.png");
+    height: 526px;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .product-card-one {
+    width: 60%;
+  }
+
+  .product-card-two {
+    display: block;
+    width: 40%;
+  }
+}
